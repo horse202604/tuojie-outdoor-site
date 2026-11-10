@@ -21,9 +21,9 @@
 /assets/fonts/*
   Cache-Control: public, max-age=31536000, immutable
 
-# ---- CSS / JS：文件名没有哈希，不能设一年，给一天并允许协商缓存
+# ---- CSS / JS：文件名没有哈希，不做长缓存，每次协商（改完立刻生效）
 /assets/css/*
-  Cache-Control: public, max-age=86400
+  Cache-Control: public, max-age=0, must-revalidate
 
 /assets/js/*
-  Cache-Control: public, max-age=86400
+  Cache-Control: public, max-age=0, must-revalidate
