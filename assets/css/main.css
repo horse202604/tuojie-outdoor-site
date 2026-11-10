@@ -1349,6 +1349,45 @@ ol {
   padding: clamp(30px, 4vw, 52px) 0 clamp(26px, 3vw, 40px);
 }
 
+/* ---------- 24. Products banner（对齐参考站：455 / 405 高，2 行大字） ---------- */
+.factory-band.factory-band--products {
+  min-height: 455px;
+}
+
+.factory-band--products .factory-band-inner {
+  padding-top: 118px;
+  padding-bottom: 86px;
+}
+
+.factory-band.factory-band--products .factory-band-inner h1 {
+  font-size: clamp(44px, 6vw, 86.4px);
+  line-height: 0.94;
+  letter-spacing: -0.05em;
+}
+
+.filter-bar--catalogue {
+  margin-bottom: 34px;
+}
+
+@media (max-width: 760px) {
+  .factory-band.factory-band--products {
+    min-height: 405px;
+  }
+
+  .factory-band--products .factory-band-inner {
+    padding-top: 60px;
+    padding-bottom: 44px;
+  }
+
+  .factory-band.factory-band--products .factory-band-inner h1 {
+    font-size: clamp(38px, 11.5vw, 44.8px);
+  }
+
+  .filter-bar--catalogue {
+    margin-bottom: 26px;
+  }
+}
+
 .breadcrumb {
   display: flex;
   flex-wrap: wrap;
