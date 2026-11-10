@@ -521,7 +521,7 @@ ol {
   margin: 16px 0 0;
   font-family: "Segoe UI Black", "Segoe UI", "Helvetica Neue", "Arial Black", Arial, sans-serif;
   font-weight: 900;
-  font-size: clamp(2rem, 4.3vw, 3.45rem);
+  font-size: clamp(28px, 4.05vw, 58px);
   line-height: 0.95;
   letter-spacing: -0.035em;
   color: #fffaf2;
@@ -1363,6 +1363,13 @@ ol {
   font-size: clamp(44px, 6vw, 86.4px);
   line-height: 0.94;
   letter-spacing: -0.05em;
+}
+
+.factory-band--products .factory-band-lead {
+  max-width: 704px;
+  margin-top: 18px;
+  font-size: 16.64px;
+  line-height: 1.7;
 }
 
 .filter-bar--catalogue {
@@ -2549,7 +2556,7 @@ ol {
   }
 
   .hero-copy h1 {
-    font-size: clamp(2.1rem, 9.2vw, 2.9rem);
+    font-size: clamp(22px, 6.4vw, 28px);
     max-width: 100%;
   }
 
