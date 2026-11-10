@@ -1,0 +1,20 @@
+# Netlify 配置 —— 纯静态站，根目录即发布目录。
+# 说明：安全头/缓存放在根目录 _headers，跳转在 _redirects（同目录），
+# Netlify 会同时读取这两个文件，所以这里不再重复声明，避免两处规则冲突。
+
+[build]
+  publish = "."
+
+# 关掉 Netlify 对 HTML 的自动处理，避免和 _headers 的缓存策略打架
+[build.processing]
+  skip_processing = true
+
+# 若以后加 Netlify Functions（不想用 Cloudflare 时），取消下面注释
+# [functions]
+#   directory = "netlify/functions"
+
+# 若以后要加权限口令（内测阶段），取消下面注释
+# [[headers]]
+#   for = "/*"
+#   [headers.values]
+#     Basic-Auth = "user:password"

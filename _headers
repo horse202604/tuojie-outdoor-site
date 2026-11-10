@@ -1,0 +1,29 @@
+# Cloudflare Pages / Netlify 共用（两边语法一致，同一份文件即可）
+
+# ---- 全站默认：HTML 不缓存，保证改完立刻生效；安全头
+/*
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: geolocation=(), microphone=(), camera=(), payment=()
+  Strict-Transport-Security: max-age=31536000; includeSubDomains
+  Content-Security-Policy: default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; script-src 'self'; connect-src 'self'; form-action 'self'; frame-ancestors 'none'; base-uri 'self'; object-src 'none'; upgrade-insecure-requests
+  Cache-Control: public, max-age=0, must-revalidate
+
+# ---- 图片与视频：内容不变，长期缓存（一年）
+/assets/img/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/assets/video/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# ---- 字体文件（若有本地字体）
+/assets/fonts/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# ---- CSS / JS：文件名没有哈希，不能设一年，给一天并允许协商缓存
+/assets/css/*
+  Cache-Control: public, max-age=86400
+
+/assets/js/*
+  Cache-Control: public, max-age=86400

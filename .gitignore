@@ -1,0 +1,23 @@
+# —— 不进仓库的文件（本地/内部用）——
+
+# 本地工作目录与截图
+_work/
+.screenshots/
+
+# 编辑器 / 工具
+.trae/
+.trae-html-share-packages/
+.vscode/
+node_modules/
+
+# 说明类文档只留本地，不随仓库公开
+*.md
+
+# 首屏旧图备份（约 1.6 MB，页面已不引用）
+assets/img/hero/legacy/
+
+# 系统垃圾文件
+.DS_Store
+Thumbs.db
+desktop.ini
+*.log

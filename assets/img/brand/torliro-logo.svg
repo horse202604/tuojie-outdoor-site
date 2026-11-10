@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="320" viewBox="0 0 320 320" role="img" aria-label="TORLIRO">
+  <rect width="320" height="320" rx="72" fill="#1d352d"/>
+  <path d="M78 226h164" stroke="#d8c5a2" stroke-width="10"/>
+  <path d="M96 206V96h128v110" stroke="#fffaf2" stroke-width="10" fill="none"/>
+  <path d="M124 206V130h72v76" stroke="#fffaf2" stroke-width="8" fill="none" opacity=".55"/>
+</svg>

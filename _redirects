@@ -1,0 +1,12 @@
+# 只保留「单向、无反向规则」的规范化跳转。
+# 注意：Cloudflare Pages 默认会把所有 *.html 以 308 跳到无扩展名路径（/products.html → /products，
+# /index.html → /），这一步在 _redirects 之后执行。所以这里绝对不能再写「无扩展名 → .html」，
+# 否则会形成 /products → /products.html → /products 的无限循环（ERR_TOO_MANY_REDIRECTS）。
+# 无扩展名路径（/products、/about …）由平台自动映射到同名 .html，无需我们配置。
+
+/index.html      /                 301
+/home            /                 301
+
+# 邮箱、电话等非页面路径不做处理；404 交给平台默认页。
+# 若以后新增 404.html，把下一行的注释去掉即可（Netlify 语法；Cloudflare 会自动用根目录 404.html）
+# /*             /404.html         404

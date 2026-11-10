@@ -1,0 +1,13 @@
+# 上传到 Cloudflare Pages 时忽略这些本地/内部文件（不影响线上运行）
+_work
+.screenshots
+.trae-html-share-packages
+.trae
+.vscode
+node_modules
+*.md
+netlify.toml
+.gitignore
+
+# 首屏旧图备份，不需要对外公开（约 1.6 MB）
+/assets/img/hero/legacy
