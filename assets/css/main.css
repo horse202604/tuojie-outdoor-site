@@ -2665,3 +2665,55 @@ ol {
     display: none;
   }
 }
+
+/* ---------- 22. Legal / privacy ---------- */
+.legal-doc {
+  max-width: 70ch;
+}
+
+.legal-doc h2 {
+  font-size: clamp(1.05rem, 1.5vw, 1.25rem);
+  margin-top: clamp(26px, 3vw, 38px);
+  letter-spacing: -0.012em;
+}
+
+.legal-doc p,
+.legal-doc li {
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.75;
+  margin-top: 10px;
+}
+
+.legal-doc ul {
+  margin-top: 10px;
+  padding-left: 18px;
+  list-style: disc;
+}
+
+.legal-doc li {
+  margin-top: 4px;
+}
+
+.legal-doc a {
+  color: var(--forest);
+  border-bottom: 1px solid var(--line);
+}
+
+.legal-doc .legal-updated {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+/* 品牌字标右上角的商标符号（TORLIRO™） */
+.tm {
+  font-size: 0.52em;
+  font-family: var(--font-mono);
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  vertical-align: 0.95em;
+  margin-left: 2px;
+}
