@@ -2874,10 +2874,16 @@ ol {
   margin-top: 24px;
 }
 
-.social-row a {
+.social-row a,
+.social-row .social-item {
   display: inline-flex;
   color: rgba(255, 255, 255, 0.55);
-  transition: color 0.18s ease, transform 0.18s ease;
+  transition: color 0.18s ease;
+}
+
+.social-row .social-item {
+  color: rgba(255, 255, 255, 0.26);
+  cursor: default;
 }
 
 .social-row a:hover,
