@@ -36,25 +36,17 @@
     });
   }
 
-  /* ---------------------------------------------- 1b. Header over the hero */
-  var siteHeader = document.getElementById("siteHeader");
-  if (siteHeader && siteHeader.classList.contains("site-header--overlay")) {
-    var syncHeader = function () {
-      siteHeader.classList.toggle("is-scrolled", window.scrollY > 24);
-    };
-    syncHeader();
-    window.addEventListener("scroll", syncHeader, { passive: true });
-  }
-
   /* --------------------------------------------------- 2. Active nav item */
-  var cleanPath = window.location.pathname.replace(/\/index(?:\.html)?$/, "/");
-  var inProducts = /^\/products\/./.test(cleanPath);
+  var path = window.location.pathname;
+  var here = path.split("/").pop() || "index.html";
+  var inProducts = /\/products\//.test(path.replace(/\\/g, "/"));
 
   nav &&
     Array.prototype.forEach.call(nav.querySelectorAll("a"), function (link) {
-      var href = (link.getAttribute("href") || "").split("#")[0] || "/";
-      var normal = href.length > 1 ? href.replace(/\/$/, "") : href;
-      if (normal === cleanPath || (inProducts && normal === "/products")) {
+      var href = link.getAttribute("href") || "";
+      var target = href.split("/").pop();
+      var isProducts = target === "products.html";
+      if ((inProducts && isProducts) || (!inProducts && target === here)) {
         link.setAttribute("aria-current", "page");
       }
     });

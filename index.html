@@ -48,7 +48,7 @@
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
 
-<header class="site-header site-header--overlay" id="siteHeader">
+<header class="site-header">
   <div class="shell header-inner">
     <a class="brand" href="/" aria-label="TORLIRO — home">
       <span class="brand-mark" aria-hidden="true">TR</span>
@@ -60,14 +60,11 @@
       <a href="/products">Products</a>
       <a href="/about">Factory</a>
       <a href="/quality">OEM/ODM</a>
-      <a class="nav-cta" href="/contact">Get a quote</a>
+      <a class="nav-cta" href="/contact">Request a quote</a>
     </nav>
 
     <div class="header-actions">
-      <a class="btn btn--primary btn--small" href="/contact">
-        Get a Quote
-        <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M2 8h11M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.7" stroke-linecap="square"/></svg>
-      </a>
+      <a class="btn btn--primary btn--small" href="/contact">Request a Quote</a>
       <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="primaryNav" aria-label="Open menu">
         <span></span><span></span>
       </button>
@@ -78,14 +75,14 @@
 <main id="main">
 
   <!-- HERO -->
-  <section class="cine">
-    <div class="cine-media">
+  <section class="hero hero--image">
+    <div class="hero-media">
       <picture>
         <source media="(max-width: 860px)"
                 srcset="assets/img/hero/hero-banner-540x720.jpg 540w,
                         assets/img/hero/hero-banner-1080x1440.jpg 1080w"
                 sizes="100vw">
-        <img class="cine-bg"
+        <img class="hero-bg"
              src="assets/img/hero/hero-banner-1920.jpg"
              srcset="assets/img/hero/hero-banner-768.jpg 768w,
                      assets/img/hero/hero-banner-1280.jpg 1280w,
@@ -94,58 +91,46 @@
              sizes="100vw"
              width="1920" height="1080" alt="" fetchpriority="high" decoding="async">
       </picture>
-      <span class="cine-veil" aria-hidden="true"></span>
+      <span class="hero-veil" aria-hidden="true"></span>
     </div>
 
-    <div class="shell cine-inner">
-      <div class="cine-copy">
-        <span class="cine-eyebrow">OEM / ODM &middot; Waterproof outdoor gear</span>
-        <h1 class="cine-title">
-          <span>Waterproof storage</span>
-          <em>for the road<br>&amp; the wild.</em>
-        </h1>
-        <p class="cine-lead">Dry bags, roof bags, lure packs and soft coolers — four product systems built in one 5,000 m² Huizhou factory around a single problem: keeping water out.</p>
-        <div class="cine-actions">
+    <div class="shell hero-inner">
+      <div class="hero-copy">
+        <span class="eyebrow">OEM / ODM &middot; Waterproof outdoor gear</span>
+        <h1>Waterproof storage for the road, the river and the wild.</h1>
+        <p class="lead">Dry bags, roof bags, lure packs and soft coolers — four product lines built in one Huizhou factory around a single problem: keeping water out.</p>
+        <div class="hero-actions">
           <a class="btn btn--primary" href="/products">
             Explore the catalogue
             <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M2 8h11M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="square"/></svg>
           </a>
-          <a class="btn btn--ghost" href="/contact">
-            Request a quote
-            <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M2 8h11M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="square"/></svg>
-          </a>
+          <a class="btn btn--light" href="/contact">Request a quote</a>
         </div>
+      </div>
+
+      <div class="hero-foot">
+        <div class="hero-tags">
+          <span>RF-welded seams</span>
+          <span>500D–1000D PVC</span>
+          <span>210D–840D TPU</span>
+          <span>Salt-spray tested</span>
+        </div>
+
+        <a class="hero-scroll" href="#scenes">
+          <span>Scroll</span>
+          <i aria-hidden="true"></i>
+        </a>
       </div>
     </div>
   </section>
 
-  <div class="hero-strip">
+  <div class="hero-stats">
     <div class="shell">
-      <div class="feature-strip">
-        <div class="fs-item">
-          <span class="fs-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none"><path d="M3 20h18M4.5 20V9l5 3V9l5 3V9l5 3v8" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M10 20v-4h4v4" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
-          </span>
-          <div class="fs-body"><b>5,000 m²</b><span>Dedicated production base</span></div>
-        </div>
-        <div class="fs-item">
-          <span class="fs-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.5"/><path d="M3 12h18M12 3c2.6 2.8 2.6 15.2 0 18M12 3c-2.6 2.8-2.6 15.2 0 18" stroke="currentColor" stroke-width="1.5"/></svg>
-          </span>
-          <div class="fs-body"><b>20+</b><span>Export markets served</span></div>
-        </div>
-        <div class="fs-item">
-          <span class="fs-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none"><path d="m12 3 9 5-9 5-9-5 9-5Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="m3 12 9 5 9-5M3 16.5l9 5 9-5" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" opacity=".55"/></svg>
-          </span>
-          <div class="fs-body"><b>24 SKUs</b><span>Four product systems</span></div>
-        </div>
-        <div class="fs-item">
-          <span class="fs-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none"><path d="M4 7h9M18.5 7H20M4 17h3.5M13 17h7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><circle cx="15.5" cy="7" r="2.2" stroke="currentColor" stroke-width="1.5"/><circle cx="9.8" cy="17" r="2.2" stroke="currentColor" stroke-width="1.5"/></svg>
-          </span>
-          <div class="fs-body"><b>OEM / ODM</b><span>Custom development in-house</span></div>
-        </div>
+      <div class="stat-band" data-reveal>
+        <div class="stat"><b>5,000 m²</b><span>Dedicated production base</span></div>
+        <div class="stat"><b>20+</b><span>Export markets served</span></div>
+        <div class="stat"><b>120</b><span>Skilled workers</span></div>
+        <div class="stat"><b>OEM / ODM</b><span>Custom development in-house</span></div>
       </div>
     </div>
   </div>
